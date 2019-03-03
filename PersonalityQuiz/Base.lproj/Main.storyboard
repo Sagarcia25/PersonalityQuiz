@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,46 +15,81 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ironMan5" translatesAutoresizingMaskIntoConstraints="NO" id="Wqa-pf-a7z">
-                                <rect key="frame" x="9" y="20" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironMan5" translatesAutoresizingMaskIntoConstraints="NO" id="Wqa-pf-a7z">
+                                <rect key="frame" x="0.0" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="S8L-Bs-cPX"/>
+                                    <constraint firstAttribute="height" constant="50" id="gJZ-9l-1LA"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spiderManTest" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-9v-k5m">
-                                <rect key="frame" x="287" y="20" width="60" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spiderManTest" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-9v-k5m">
+                                <rect key="frame" x="349" y="20" width="65" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="buh-Jj-aA6"/>
+                                    <constraint firstAttribute="width" constant="65" id="ygx-Ck-oKV"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hulkTest2" translatesAutoresizingMaskIntoConstraints="NO" id="HkY-Ys-2SI">
-                                <rect key="frame" x="16" y="597" width="45" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hulkTest2" translatesAutoresizingMaskIntoConstraints="NO" id="HkY-Ys-2SI">
+                                <rect key="frame" x="10" y="666" width="40" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Co-Jk-ONC"/>
+                                    <constraint firstAttribute="width" constant="40" id="i5h-Kq-ctt"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thorTest" translatesAutoresizingMaskIntoConstraints="NO" id="zAp-3N-sFm">
-                                <rect key="frame" x="287" y="592" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marveltest" translatesAutoresizingMaskIntoConstraints="NO" id="TVq-1f-HDa">
+                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="NHg-q3-Yjt"/>
+                                    <constraint firstAttribute="height" constant="128" id="dEn-mb-ZNM"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What Marvel Character Are You?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YO-UR-vMi">
-                                <rect key="frame" x="-42" y="308" width="458" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Uy-wv-c5y">
-                                <rect key="frame" x="96" y="361" width="182" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Begin Personality Quiz">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marveltest" translatesAutoresizingMaskIntoConstraints="NO" id="TVq-1f-HDa">
-                                <rect key="frame" x="67" y="164" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cE8-iU-goS">
+                                <rect key="frame" x="37" y="339" width="340.33333333333331" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Marvel Character Are You?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YO-UR-vMi">
+                                        <rect key="frame" x="0.0" y="0.0" width="340.33333333333331" height="23"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Uy-wv-c5y">
+                                        <rect key="frame" x="0.0" y="25" width="340.33333333333331" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Begin Personality Quiz">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ags-i5-q0H" kind="show" id="rPx-Fo-HxA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thorTest" translatesAutoresizingMaskIntoConstraints="NO" id="zAp-3N-sFm">
+                                <rect key="frame" x="354" y="656" width="60" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="pE9-ux-JDf"/>
+                                    <constraint firstAttribute="height" constant="70" id="ymV-wI-MXw"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14620674289999999" green="0.38838684979999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wqa-pf-a7z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6E6-po-ul7"/>
+                            <constraint firstItem="cE8-iU-goS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPD-1B-qJW"/>
+                            <constraint firstItem="zAp-3N-sFm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GoL-34-tOB"/>
+                            <constraint firstItem="Wqa-pf-a7z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KrE-t0-fIT"/>
+                            <constraint firstItem="HkY-Ys-2SI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="LRa-6j-Kni"/>
+                            <constraint firstItem="cE8-iU-goS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MVz-rB-ZFY"/>
+                            <constraint firstItem="KUI-9v-k5m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cpZ-KT-YKN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zAp-3N-sFm" secondAttribute="bottom" constant="10" id="fqu-mK-jnK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HkY-Ys-2SI" secondAttribute="bottom" constant="20" id="kkA-ia-O4W"/>
+                            <constraint firstItem="cE8-iU-goS" firstAttribute="top" secondItem="TVq-1f-HDa" secondAttribute="bottom" constant="10" id="oH8-Ht-RWz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUI-9v-k5m" secondAttribute="trailing" id="qwz-9v-gbP"/>
+                            <constraint firstItem="TVq-1f-HDa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y7q-M0-j4N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -67,11 +102,14 @@
             <objects>
                 <viewController id="Ags-i5-q0H" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XtA-ye-sp8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UNg-hU-CG2"/>
                     </view>
+                    <connections>
+                        <segue destination="DFm-bW-8hp" kind="show" identifier="ResultsSegue" id="O2I-Ds-s1x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1Y-pp-nJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +120,7 @@
             <objects>
                 <viewController id="DFm-bW-8hp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4o-nO-qhX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="koz-Nv-foc"/>
