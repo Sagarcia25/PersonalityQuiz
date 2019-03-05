@@ -23,8 +23,8 @@ struct Answer {
     var type: HeroType
 }
 
-enum HeroType {
-    case ironman, spiderman, hulk, thor
+enum HeroType: String {
+    case ironman = "Iron Man", spiderman = "Spider Man", hulk = "Hulk", thor = "Thor"
     
     var definition: String{
         switch self {

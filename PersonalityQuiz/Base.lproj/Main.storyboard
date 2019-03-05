@@ -147,7 +147,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ike-mD-W0w">
                                 <rect key="frame" x="20.333333333333343" y="251" width="373.66666666666663" height="234"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="283" translatesAutoresizingMaskIntoConstraints="NO" id="6wa-u8-K0d">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="283" translatesAutoresizingMaskIntoConstraints="NO" id="6wa-u8-K0d">
                                         <rect key="frame" x="0.0" y="0.0" width="373.66666666666669" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r32-HG-zlw">
@@ -215,12 +215,11 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-Pq-U8B">
                                 <rect key="frame" x="20" y="714" width="374" height="2"/>
                             </progressView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-VT-2ei" userLabel="RangedStackView">
-                                <rect key="frame" x="-109.33333333333334" y="256" width="633.33333333333337" height="171.66666666666666"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-VT-2ei" userLabel="RangedStackView">
+                                <rect key="frame" x="-121.66666666666669" y="282.33333333333331" width="657.33333333333348" height="171.66666666666669"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="crv-3c-LNq">
-                                        <rect key="frame" x="131.33333333333334" y="0.0" width="370.66666666666663" height="20.333333333333332"/>
+                                        <rect key="frame" x="143.33333333333334" y="0.0" width="370.66666666666663" height="20.333333333333332"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-4n-L62">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="20.333333333333332"/>
@@ -249,22 +248,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oky-Qo-275">
-                                        <rect key="frame" x="0.0" y="51.333333333333336" width="633.33333333333337" height="120.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="51.333333333333364" width="657.33333333333337" height="120.33333333333331"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vee-IS-NI4">
-                                                <rect key="frame" x="-2" y="0.0" width="637.33333333333337" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="661.33333333333337" height="31"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="290" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-e5-8Gy">
-                                                <rect key="frame" x="0.0" y="49.999999999999993" width="633.33333333333337" height="20.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="50" width="657.33333333333337" height="20.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C36-nk-rc8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="301.66666666666669" height="20.333333333333332"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="325.66666666666669" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQs-uV-Ufz">
-                                                        <rect key="frame" x="591.66666666666663" y="0.0" width="41.666666666666629" height="20.333333333333332"/>
+                                                        <rect key="frame" x="615.66666666666663" y="0.0" width="41.666666666666629" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -272,8 +271,11 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-85-WuK">
-                                                <rect key="frame" x="0.0" y="90.333333333333314" width="633.33333333333337" height="30"/>
+                                                <rect key="frame" x="0.0" y="90.333333333333314" width="657.33333333333337" height="30"/>
                                                 <state key="normal" title="Submit Answer"/>
+                                                <connections>
+                                                    <action selector="rangedAnswerButtonPressed" destination="Ags-i5-q0H" eventType="touchUpInside" id="r0J-pb-r2D"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -287,8 +289,10 @@
                             <constraint firstItem="gFb-Pq-U8B" firstAttribute="leading" secondItem="XtA-ye-sp8" secondAttribute="leadingMargin" id="86r-hI-DqL"/>
                             <constraint firstItem="UNg-hU-CG2" firstAttribute="bottom" secondItem="gFb-Pq-U8B" secondAttribute="bottom" constant="20" id="BzZ-cf-bcb"/>
                             <constraint firstItem="mYd-46-Zku" firstAttribute="leading" secondItem="UNg-hU-CG2" secondAttribute="leading" constant="10" id="ETY-Mn-JI5"/>
+                            <constraint firstItem="odZ-VT-2ei" firstAttribute="centerY" secondItem="XtA-ye-sp8" secondAttribute="centerY" id="IHg-sy-QAH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gFb-Pq-U8B" secondAttribute="trailing" id="Unb-eK-F59"/>
                             <constraint firstItem="Z5W-ev-bIQ" firstAttribute="leading" secondItem="UNg-hU-CG2" secondAttribute="leading" id="Zja-nI-srM"/>
+                            <constraint firstItem="odZ-VT-2ei" firstAttribute="centerX" secondItem="XtA-ye-sp8" secondAttribute="centerX" id="fOq-mJ-PNE"/>
                             <constraint firstItem="Z5W-ev-bIQ" firstAttribute="top" secondItem="UNg-hU-CG2" secondAttribute="top" constant="20" id="hif-qg-SKm"/>
                             <constraint firstItem="ike-mD-W0w" firstAttribute="centerY" secondItem="XtA-ye-sp8" secondAttribute="centerY" id="lRy-WG-DY5"/>
                             <constraint firstItem="mYd-46-Zku" firstAttribute="centerY" secondItem="XtA-ye-sp8" secondAttribute="centerY" id="so1-ur-IHE"/>
@@ -312,6 +316,7 @@
                         <outlet property="rangedLabel2" destination="1NU-ZT-TU2" id="NOl-jG-jnI"/>
                         <outlet property="rangedLabel3" destination="Q6B-S8-R0i" id="1h4-J7-HS2"/>
                         <outlet property="rangedLabel4" destination="v0R-UY-93A" id="PBU-eu-cDZ"/>
+                        <outlet property="rangedSlider" destination="Vee-IS-NI4" id="sfE-40-dZz"/>
                         <outlet property="rangedStackView" destination="odZ-VT-2ei" id="AXq-p0-bgz"/>
                         <outlet property="singleButton1" destination="uRe-B3-ibu" id="zIZ-Ea-wid"/>
                         <outlet property="singleButton2" destination="BU4-9C-ZtD" id="qZt-HB-idQ"/>
@@ -359,12 +364,21 @@
                         <viewLayoutGuide key="safeArea" id="koz-Nv-foc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="JeL-Tl-icM">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="L33-BG-zEg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="L33-BG-zEg">
+                            <connections>
+                                <segue destination="fNr-tw-d6l" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="gq5-3O-m5C"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="6GO-gl-fdc" id="C1H-pU-q73"/>
+                        <outlet property="resultDefinitionLabel" destination="DnX-3d-R0a" id="yj6-GT-Hha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhZ-9T-CaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fNr-tw-d6l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2185.507246376812" y="137.77173913043478"/>
+            <point key="canvasLocation" x="2185.507246376812" y="136.95652173913044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zLb-0h-ptl">
