@@ -15,12 +15,12 @@ struct Question {
 }
 
 enum ResponseType {
-    case single, double, ranged
+    case single, multiple, ranged
 }
 
 struct Answer {
     var text: String
-    var type: ResponseType
+    var type: HeroType
 }
 
 enum HeroType {
