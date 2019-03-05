@@ -192,22 +192,22 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oky-Qo-275">
-                                <rect key="frame" x="-47.666666666666657" y="308" width="509.33333333333326" height="120.33333333333331"/>
+                                <rect key="frame" x="-49.666666666666657" y="308" width="513.33333333333337" height="120.33333333333331"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vee-IS-NI4">
-                                        <rect key="frame" x="-2" y="0.0" width="513.33333333333326" height="31"/>
+                                        <rect key="frame" x="-2" y="0.0" width="517.33333333333337" height="31"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="290" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-e5-8Gy">
-                                        <rect key="frame" x="0.0" y="50" width="509.33333333333331" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="50" width="513.33333333333337" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C36-nk-rc8">
-                                                <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQs-uV-Ufz">
-                                                <rect key="frame" x="467.66666666666669" y="0.0" width="41.666666666666686" height="20.333333333333332"/>
+                                                <rect key="frame" x="471.66666666666669" y="0.0" width="41.666666666666686" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -215,7 +215,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-85-WuK">
-                                        <rect key="frame" x="0.0" y="90.333333333333314" width="509.33333333333331" height="30"/>
+                                        <rect key="frame" x="0.0" y="90.333333333333314" width="513.33333333333337" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
                                     </button>
                                 </subviews>
@@ -249,6 +249,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="cmS-3E-GBP"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="ike-mD-W0w" id="TAa-o0-TkU"/>
+                        <outlet property="rangedStackView" destination="oky-Qo-275" id="G8f-U6-4Wx"/>
+                        <outlet property="singleStackView" destination="mYd-46-Zku" id="dLf-fK-njh"/>
                         <segue destination="DFm-bW-8hp" kind="show" identifier="ResultsSegue" id="O2I-Ds-s1x"/>
                     </connections>
                 </viewController>
