@@ -206,6 +206,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hat-1U-1Wa">
                                         <rect key="frame" x="0.0" y="204" width="373.66666666666669" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="Ags-i5-q0H" eventType="touchUpInside" id="2vb-Li-wmc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -294,6 +297,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="cmS-3E-GBP"/>
                     <connections>
+                        <outlet property="multiSwitch1" destination="nMw-IX-EQg" id="oLG-Ua-xo4"/>
+                        <outlet property="multiSwitch2" destination="Bag-WH-WcK" id="30g-6N-IDZ"/>
+                        <outlet property="multiSwitch3" destination="IjW-Tc-bda" id="c97-Jo-UuH"/>
+                        <outlet property="multiSwitch4" destination="mXP-qq-fuY" id="fdn-mJ-9Py"/>
                         <outlet property="multipleLabel1" destination="r32-HG-zlw" id="WOn-vJ-k2o"/>
                         <outlet property="multipleLabel2" destination="Cr2-Fn-i5v" id="jWT-ke-BZo"/>
                         <outlet property="multipleLabel3" destination="WDg-Gw-iN0" id="CJJ-QC-yRi"/>
