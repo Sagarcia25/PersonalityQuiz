@@ -39,6 +39,30 @@ class QuestionViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+   
+   var answerChosen:[Answer] = []
+    
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+        let currentAnswers = question[questionIndex].answers
+        
+        switch sender {
+        case singleButton1:
+            answerChosen.append(currentAnswers[0])
+        case singleButton2:
+            answerChosen.append(currentAnswers[1])
+        case singleButton3:
+            answerChosen.append(currentAnswers[2])
+        case singleButton4:
+            answerChosen.append(currentAnswers[3])
+        default:
+            break
+        }
+        nextQuestion()
+    }
+    
+    
+    var questionIndex = 0
     
     func  updateUI() {
         singleStackView.isHidden = true
@@ -113,8 +137,8 @@ class QuestionViewController: UIViewController {
     
     ]
     
-    var questionIndex = 0
-        
+    
+    
     
 
     /*
