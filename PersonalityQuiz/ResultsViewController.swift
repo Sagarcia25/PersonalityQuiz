@@ -16,6 +16,7 @@ class ResultsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var responses: [Answer]!
 
     /*
     // MARK: - Navigation

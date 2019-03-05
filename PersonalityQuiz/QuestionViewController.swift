@@ -34,6 +34,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var rangedLabel2: UILabel!
     @IBOutlet weak var rangedLabel3: UILabel!
     @IBOutlet weak var rangedLabel4: UILabel!
+    @IBOutlet weak var rangedSlider: UISlider!
+    
     
     @IBOutlet weak var questionProgressView: UIProgressView!
     
@@ -42,6 +44,13 @@ class QuestionViewController: UIViewController {
         updateUI()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue"{
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answerChosen
+        }
     }
    
    var answerChosen:[Answer] = []
@@ -83,9 +92,24 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
+    @IBAction func rangedAnswerButtonPressed() {
+        let currentAnswers = question[questionIndex].answers
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        
+        answerChosen.append(currentAnswers[index])
+        
+        nextQuestion()
+    }
     
-    
-    
+    func nextQuestion(){
+        questionIndex += 1
+        
+        if questionIndex < question.count{
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
+    }
     
     var questionIndex = 0
     
@@ -124,6 +148,10 @@ class QuestionViewController: UIViewController {
     
     func updateMultipleStack(using answers: [Answer]) {
         multipleStackView.isHidden = false
+        multiSwitch1.isOn = false
+        multiSwitch2.isOn = false
+        multiSwitch3.isOn = false
+        multiSwitch4.isOn = false
         multipleLabel1.text = answers[0].text
         multipleLabel2.text = answers[1].text
         multipleLabel3.text = answers[2].text
@@ -131,7 +159,8 @@ class QuestionViewController: UIViewController {
     }
     
     func updateRangedStack(using answers: [Answer]) {
-        singleStackView.isHidden = false
+        rangedStackView.isHidden = false
+        rangedSlider.setValue(0.5, animated: false)
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers[1].text
         rangedLabel3.text = answers[2].text
