@@ -10,6 +10,7 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet weak var resultAnswerLabel: UILabel!
     @IBOutlet weak var resultDefinitionLabel: UILabel!
     
@@ -33,14 +34,24 @@ class ResultsViewController: UIViewController {
                 ?? 0) + 1
         }
         
-        let frequencyAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) -> Bool in
-            return pair1.value > pair2.value
-        })
-        let mostCommonAnswer = frequencyOfAnswers.first!.key
+//        let frequencyAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) -> Bool in
+//            return pair1.value > pair2.value
+//        })
+        let mostCommonAnswer = frequencyOfAnswers.sorted{$0.1 > $1.1}.first!.key
         
-        resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
+        resultAnswerLabel.text = "You are \(mostCommonAnswer.rawValue)!"
         resultDefinitionLabel.text = mostCommonAnswer.definition
         
+        switch mostCommonAnswer {
+        case .ironman:
+            resultImage.image = UIImage(named: "ironManResult")
+        case .spiderman:
+            resultImage.image = UIImage(named: "spiderManResult")
+        case .hulk:
+            resultImage.image = UIImage(named: "hulkResult")
+        case .thor:
+            resultImage.image = UIImage(named: "thorResult")
+        }
     }
     
     /*

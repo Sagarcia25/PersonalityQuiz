@@ -29,6 +29,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var multiSwitch3: UISwitch!
     @IBOutlet weak var multiSwitch4: UISwitch!
     
+    
     @IBOutlet weak var rangedStackView: UIStackView!
     @IBOutlet weak var rangedLabel1: UILabel!
     @IBOutlet weak var rangedLabel2: UILabel!
@@ -161,10 +162,10 @@ class QuestionViewController: UIViewController {
     func updateRangedStack(using answers: [Answer]) {
         rangedStackView.isHidden = false
         rangedSlider.setValue(0.5, animated: false)
-        rangedLabel1.text = answers.first?.text
-        rangedLabel2.text = answers[1].text
-        rangedLabel3.text = answers[2].text
-        rangedLabel4.text = answers.last?.text
+        rangedLabel1.text = answers.last?.text
+//        rangedLabel2.text = answers[1].text
+//        rangedLabel3.text = answers[2].text
+        rangedLabel4.text = answers.first?.text
         
     }
     
@@ -187,6 +188,12 @@ class QuestionViewController: UIViewController {
             Answer(text: "Love being apart of the group", type: .thor),
             Answer(text: "I don't mind ", type: .spiderman),
             Answer(text: "I want to be alone", type: .hulk)
+            ]),
+        Question(text: "What is your favorite color?", type: .single, answers: [
+            Answer(text: "Red", type: .ironman),
+            Answer(text: "Blue", type: .spiderman),
+            Answer(text: "Green", type: .hulk),
+            Answer(text: "Yellow", type: .thor)
             ])
     
     ]
