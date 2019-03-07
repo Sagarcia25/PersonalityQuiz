@@ -194,6 +194,12 @@ class QuestionViewController: UIViewController {
             Answer(text: "Blue", type: .spiderman),
             Answer(text: "Green", type: .hulk),
             Answer(text: "Yellow", type: .thor)
+            ]),
+        Question(text: "Which traits describe you", type: .multiple, answers: [
+            Answer(text: "Sassy", type: .ironman),
+            Answer(text: "Naive", type: .spiderman),
+            Answer(text: "Hasty", type: .hulk),
+            Answer(text: "Adamant", type: .thor)
             ])
     
     ]
